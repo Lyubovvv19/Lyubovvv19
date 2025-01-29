@@ -1,0 +1,50 @@
+{% extends 'main/layout.html' %}
+{% load my_filters %}
+{% block rasp2 %}
+    <div class="tab">
+<table >
+    <tr class="rg">
+    <tr style="font-weight:bold">
+        <td class="data">Дата</td>
+        <td class="day">День</td>
+        <td class="time">Время</td>
+        <td class="para">     </td>
+    </tr>
+    {% for ob in lst %}
+    <tr>
+        <td rowspan = "8" style="font-weight:bold"> {{ob.data}} </td>
+        <td rowspan = "8" style="font-weight:bold"> {{ob.day}}</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr >
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    {% for q,t in ob.para %}
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          {% if forloop.counter > 1 %}
+          {% endif %}-->
+             <td>{{q}}</td>
+
+        <td >  {{t}} </td>
+
+
+    </tr>
+    {% endfor %}
+    {% endfor %}
+    </tr>
+    <div>
+
+    </div>
+
+</table>
+</div>
+
+{% endblock %}

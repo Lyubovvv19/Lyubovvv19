@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-size: 20px;
+    align-items: center;
+}
+
+
+}
+tr:nth-child(even) {
+    background-color: #F5F5F5;
+     /* Цвет для четных строк */
+}
+tr:nth-child(odd) {
+    background-color: #fff;
+
+     /* Цвет для нечетных строк */
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #A9A9A9;
+  text-align: center; /* Центрирование текста */
+  vertical-align: middle;
+}
+ th {
+
+  text-align: center;
+  padding: 10px;
+  border: 3px solid #A9A9A9;
+ }
+
+   .dropdown {
+        display: none;
+        border: 1px solid #ccc;
+        padding: 10px;
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+    }
+    .dropdown-container {
+        position: relative;
+    }
+    .dropdown-container:hover .dropdown {
+        display: block;
+    }
+    .scrollable {
+        max-height: 150px;
+        overflow-y: auto; /* Включаем прокрутку */
+    }
+
+form {
+    display: block;
+    background-color: #fff;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    padding: 20px;
+    top: 10px;
+    text-align: center;
+}
+
+
+.header{
+    border-bottom: 3px solid #007bff;
+    width: 100%;
+
+}
+
+.dat{
+    display: flex;
+
+}
+.dat1{
+    width: 50%;
+}
+
+.dat2{
+    width: 50%;
+}
+.date{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.datt{
+    display: flex;
+
+}
+.datt1{
+    width: 50%;
+}
+.datt2{
+    width: 50%;
+}
+
+
+.btn1 {
+    background-color: #007bff;
+    padding: 5px 5px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.btn1:hover {
+    background-color: #0056b3;
+}
+
+
+t{
+    width:60% ;
+}
+.f{
+    width:40% ;
+}
+.dt{
+    width:100% ;
+    display: flex;
+    flex-direction: row;
+}
+
+.rg {
+ background-color:  #f2f2f2;
+ border-bottom-width: 6px;
+ border-bottom-style: double;
+ border-bottom-color: #A9A9A9;
+}
+
+.a{
+   width:100% ;
+   display: flex;
+  
+}
+
+.tt{
+   width:100% ;
+   display: flex;
+   justify-content: center; /* Центрирование по горизонтали */
+   align-items: center;
+   top: 10px;
+}
+
+.center {
+            text-align: center; /* Центрирование текста */
+            vertical-align: middle; /* Центрирование по вертикали */
+
+        }
+/*.
+table {
+
+  max-width:90% ;
+
+  top: 300px;
+  background-color: #fff;
+
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid #dddddd;
+  left: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

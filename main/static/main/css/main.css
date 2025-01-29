@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-size: 20px;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    padding: 20px;
+    top: 10px;
+    text-align: center;
+}
+
+.container2 {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    padding: 20px;
+    top: 10px;
+    text-align: center;
+}
+.cc{
+    display: flex;
+    flex-direction: row;
+}
+.probel {
+
+}
+.a{
+width: 0%;
+}
+.header{
+    border-bottom: 3px solid #007bff;
+    width: 100%;
+    font-weight: bolder;
+}
+
+.header2{
+    border-bottom: 3px solid #191970;
+    width: 100%;
+}
+.box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+
+}
+
+select {
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn1:hover {
+    background-color: #0056b3;
+}
+.btn2:hover {
+    background-color: #101047;
+}
+.btn1 {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn2 {
+    background-color: #191970;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form {
+    display: block; /* Убедитесь, что форма отображается как блочный элемент */
+    margin-bottom: 20px; /* Отступ между формой и таблицей */
+}
+
+table {
+  width: 100%;
+  max-width: calc(100% );
+
+  top: 300px;
+  background-color: #fff;
+
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid #dddddd;
+  left: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #A9A9A9;
+}
+ th {
+
+  text-align: center;
+  padding: 10px;
+  border: 3px solid #A9A9A9;
+ }
+
+.tb {
+
+}
+
+tr:nth-child(even) {
+    background-color: #F5F5F5; /* Цвет для четных строк */
+}
+tr:nth-child(odd) {
+    background-color: #fff; /* Цвет для нечетных строк */
+}
+.rg {
+ background-color:  #f2f2f2;
+ border-bottom-width: 6px;
+ border-bottom-style: double;
+ border-bottom-color: #A9A9A9;
+}
+.gran {
+ border-bottom-width: 3px;
+ border-bottom-style: double;
+
+}
+.data{
+    width: 150px;
+}
+
+.day {
+   width: 100px;
+}
+
+.time {
+   width: 140px;
+}
+

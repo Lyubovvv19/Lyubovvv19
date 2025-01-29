@@ -1,0 +1,73 @@
+{% extends 'auditory/aud.html' %}
+{% load my_filters %}
+{% block tab %}
+<tr class="rg">
+<div class="tab">
+<table >
+    <tr class="rg">
+    <tr style="font-weight:bold">
+        <td class="time" style="width: 300px;">Время</td>
+        {% for num in auditorya %}
+        <td class="para" style="width: {{ width }}px;"> {{num}} </td>
+        {% endfor %}
+    </tr>
+      <tr >
+    <td hidden=""></td>
+       {% for num in auditorya %}
+        <td hidden=""></td>
+        {% endfor %}
+    </tr>
+        {% for ob in lst %}
+        {% for t, l in ob.para %}
+    <tr >
+    <td hidden=""></td>
+       {% for num in auditorya %}
+        <td hidden=""></td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td class="tdt" style="font-weight:bold"> {{t}} </td>
+        {% for l1, l2 in l %}
+        {% if l1 == minus %}
+
+        <td class="center" id="myButton" style="background-color: SeaGreen"  data-tippy-content="{{l2}}" > {{l1}} </td>
+
+        {% else %}
+
+        <td class="center" id="myButton" style="background-color: IndianRed"  data-tippy-content="{{l2}}" > {{l1}} </td>
+        {% endif %}
+        {% endfor %}
+
+
+
+    </tr>
+    <tr >
+    <td hidden=""></td>
+
+
+    </tr>
+
+
+
+    {% endfor %}
+    {% endfor %}
+
+    </tr>
+    <div>
+
+    </div>
+
+
+</table>
+
+
+</div>
+</tr>
+<script>
+    tippy('#myButton', {
+        content: 'Это всплывающая подсказка!',
+        animation: 'fade', // Можно настроить анимацию
+        placement: 'top' // Положение подсказки
+    });
+</script>
+{% endblock %}

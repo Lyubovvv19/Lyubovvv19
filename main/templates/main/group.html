@@ -1,0 +1,62 @@
+{% extends 'main/layout.html' %}
+{% load my_filters %}
+<!-- main/templates/main/schedule.html -->
+{% block rasp %}
+    <div class="tab">
+<table >
+    <tr class="rg">
+    <tr style="font-weight:bold">
+        <td class="data">Дата</td>
+        <td class="day">День</td>
+        <td class="time">Время</td>
+        {% for  num in group_count|create_range %}
+        <td class="para" style="width: {{ width }}px;"> {{num|add:1}} п/г    </td>
+        {% endfor %}
+    </tr>
+    {% for ob in lst %}
+
+    <tr>
+        <td rowspan = "8" style="font-weight:bold"> {{ob.data}} </td>
+        <td rowspan = "8" style="font-weight:bold"> {{ob.day}}</td>
+        <td hidden=""></td>
+         {% for  num in group_count|create_range %}
+        <td hidden="">     </td>
+        {% endfor %}
+
+    </tr>
+    <tr >
+    <td hidden=""></td>
+        {% for  num in group_count|create_range %}
+        <td hidden="">     </td>
+        {% endfor %}
+    </tr>
+
+    {% for q,t in ob.para %}
+    <tr class="gran">
+         <!-- Пропускаем первый элемент
+          {% if forloop.counter > 1 %}
+          {% endif %}-->
+             <td>{{q}}</td>
+        {%if t|length == 1 %}
+        {% for i in t %}
+             <td colspan="{{group_count}}">{{i}}</td>
+        {% endfor %}
+        {%else%}
+           {% for  n in t %}
+        <td >  {{n}} </td>
+        {% endfor %}
+        {%endif%}
+
+    </tr>
+    {% endfor %}
+    {% endfor %}
+    </tr>
+
+    <div>
+
+    </div>
+
+</table>
+</div>
+
+{% endblock %}
